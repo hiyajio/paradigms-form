@@ -14,25 +14,6 @@ function getFormInfo(){
   var story_text = document.getElementById('text-story').value;
   console.log('title:' + title_text + ' author: ' + author_text + ' story ' + story_text);
 
-  // get checkbox state
-  var genres_string = "";
-  if (document.getElementById('checkbox-horror-value').checked){
-      console.log('detected horror!');
-      genres_string += "Horror,";
-  }
-
-  if (document.getElementById('checkbox-comedy-value').checked) {
-      console.log('detected comedy!');
-      genres_string += "Comedy,";
-  }
-
-  if (document.getElementById('checkbox-drama-value').checked) {
-      console.log('detected drama!');
-      genres_string += "Drama";
-  }
-  // make genre combined string
-  console.log('genres: ' + genres_string);
-
   // make dictionary
   story_dict = {};
   story_dict['title'] = title_text;
